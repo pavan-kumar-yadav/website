@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Hall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Welcome to Our Function Hall</h1>
+    </header>
+    
+    <nav>
+        <ul style="text-align: center;">
+            <li><a href="#about">About</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h2>About Our Function Hall</h2>
+            <p>Welcome to our elegant function hall, the perfect venue for your special events. Whether you're hosting a wedding, birthday celebration, corporate event, or any other occasion, we're here to make it unforgettable.</p>
+            <p>Our function hall offers a spacious and luxurious environment, equipped with state-of-the-art facilities to accommodate your needs. With our dedicated staff and attention to detail, we ensure that every aspect of your event is executed flawlessly.</p>
+            <p>Experience the charm and sophistication of our function hall, where memories are made and celebrations come to life.</p>
+        </section>
+        
+        <section id="facilities">
+            <h2>Facilities</h2>
+            <ul>
+                <li><strong>Decoration:</strong> Transform our function hall into your dream venue with customizable decorations tailored to your theme and preferences.</li>
+                <li><strong>Catering:</strong> Indulge in a delightful culinary experience with our expert catering services, offering a diverse menu of gourmet dishes to tantalize your taste buds.</li>
+                <li><strong>Rooms:</strong> Relax and unwind in our comfortable and luxurious rooms, providing a peaceful retreat for you and your guests before and after the event.</li>
+                <li><strong>DJ:</strong> Dance the night away with our professional DJ services, setting the mood with a vibrant selection of music to keep the party going.</li>
+            </ul>
+        </section>
+        
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div id="image-gallery">
+                <!-- Insert images of your halls here -->
+                <img src="image1.jpeg" alt="Hall 1">
+                <img src="image2.jpeg" alt="Hall 2">
+                <img src="image3.jpeg" alt="Hall 3">
+                <img src="image4.jpeg" alt="Hall 4">
+                <img src="image5.jpeg" alt="Hall 5">
+                <img src="image6.jpeg" alt="Hall 6">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <!-- <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="3d369d7e-e312-4fcd-94d3-291a50642ce6"> -->
+                <form action = "/submit-form" method="POST" id="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer style="text-align: center;">
+        <p>&copy; 2024 Your Function Hall. All rights reserved.</p>
+        <p>OwnerName:Pavan</p>
+        <p>Contact:+91 9704680396</p>
+        <p>Address:Punganur</p>
+    </footer>
+
+    <script>
+        // Form validation
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+
+            // Simple validation
+            if (name === '' || email === '' || phone === '') {
+                alert('Please fill in all fields.');
+            } else {
+                // You can perform further actions here, like sending form data to server
+                alert('Form submitted successfully!');
+                // Reset form after submission
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
+
